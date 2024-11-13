@@ -1,0 +1,485 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(black,green) ;
+    color: #000000;
+    
+}
+/*Style pour le mode sombre*/
+body.dark-theme {
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+/* Bouton de bascule du thème */
+.theme-toggle {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+body.dark-theme .theme-toggle {
+    background-color: #333;
+}
+
+/* Icône du thème avec animation */
+.icon {
+    font-size: 24px;
+    transition: transform 0.5s ease;
+}
+
+body.dark-theme .icon {
+    transform: rotate(180deg);  /* Rotation lors du changement de thème */
+}
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Barre de navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 0px;
+    z-index: 1000;
+}
+
+.navbar .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+
+
+/* Section Home (accueil) */
+.home-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.home-section p {
+    font-size: 4em;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+}
+.home-section p::before,
+.home-section p::after 
+ {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #ff00c1;
+    background: #020202;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    animation: glitch 3s infinite linear alternate-reverse;
+  }
+  .home-section p {
+    color: rgb(238, 239, 240);
+    animation-delay: 0.8s;
+  }
+  @keyframes glitch {
+    0% { clip: rect(0, 900px, 0, 0); transform: translate(0); }
+  10% { clip: rect(10px, 900px, 50px, 0); transform: translate(-5px, -5px); }
+  20% { clip: rect(20px, 900px, 10px, 0); transform: translate(5px, 5px); }
+  30% { clip: rect(30px, 900px, 40px, 0); transform: translate(-5px, 0); }
+  40% { clip: rect(40px, 900px, 20px, 0); transform: translate(5px, -5px); }
+  50% { clip: rect(50px, 900px, 30px, 0); transform: translate(-5px, 5px); }
+  60% { clip: rect(60px, 900px, 40px, 0); transform: translate(5px, 0); }
+  70% { clip: rect(70px, 900px, 50px, 0); transform: translate(-5px, -5px); }
+  80% { clip: rect(80px, 900px, 60px, 0); transform: translate(5px, 5px); }
+  90% { clip: rect(90px, 900px, 70px, 0); transform: translate(-5px, 0); }
+  100% { clip: rect(100px, 900px, 80px, 0); transform: translate(0); }
+}
+
+
+.btn-contact {
+    display:inline-flex;
+    margin-top: 80px;
+    padding: 10px 30px;
+    background-color: #0699fb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+   
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .contact-btn {
+    font-size: 20px;
+    margin-top: 10px; /* espace entre le texte et le bouton */
+    padding: 10px 30px;
+    background-color: #09bff7; /* couleur du bouton */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    text-decoration: solid;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  
+
+.btn-contact:hover {
+    background-color: #2980b9;
+}
+/* Section About (À propos) */
+.about-section {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.about-image{
+    width: 5px;
+    height: 1000px;
+    margin: auto;
+    margin-left:  10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    }
+
+.about-text{
+    font-size: 30px;
+    border-radius: 10px;
+    color: #f0f0f0;
+    }
+
+
+/* Autres styles et animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+section {
+    margin: 2px auto;
+    max-width: 1000px;
+}
+/* Style de la section compétences */
+#competences {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#competences h2 {
+    margin-bottom: 20px;
+}
+
+.competence {
+    margin-bottom: 15px;
+}
+
+.competence label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #000000, #fafa04);
+    border-radius: 25px;
+    transition: width 1.5s ease-in-out;
+}
+
+/**telechargement cv**/ 
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-item {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px); /* L'effet de survol */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-item svg {
+    width: 35px;
+    border-bottom: 3px solid #5bbaf9; /* Ligne bleue sous l'image */
+    transition: transform 0.3s ease;
+}
+
+.project-item svg:hover {
+    transform: scale(1.05); /* Zoom au survol */
+}
+.project-item a:hover svg {
+    fill: #3498db; /* Change la couleur au survol */
+    transform: scale(1.1); /* Slight enlargement */
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.project-item h3 {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+#projects {
+    padding: 20px;
+    background:linear-gradient(black, blue);
+    text-align: center;
+    border-radius: 15px;
+}
+
+#projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#add-project-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4e4caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-project-btn:hover {
+    background-color: #45a049;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: rgb(94, 236, 12);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-top: 1px solid #ddd;
+}
+
+/* Barre latérale des réseaux sociaux */
+.social-bar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Pour être toujours visible au-dessus du contenu */
+}
+
+.social-bar a {
+    margin: 10px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px; /* Ajustement pour correspondre à la taille des icônes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9c7c7; /* Couleur de fond des icônes */
+    border-radius: 50%; /* Rendre les icônes complètement rondes */
+    transition: background-color 0.3s, transform 0.3s ease; /* Animation fluide */
+}
+
+/* Style de base pour les icônes SVG */
+.social-bar a svg {
+    width: 24px; /* Taille initiale des icônes */
+    height: 24px;
+    transition: transform 0.3s ease; /* Animation fluide pour l'agrandissement */;
+}
+
+/* Effet d'agrandissement au survol */
+.social-bar a:hover svg {
+    transform: scale(1.5); /* Agrandir à 1.5 fois la taille originale */
+}
+
+/* Effet au survol pour l'élément <a> */
+.social-bar a:hover {
+    transform: scale(1.1); /* Agrandir légèrement le conteneur de l'icône */
+    background-color: #555; /* Changer la couleur de fond au survol */
+}
+
+/* Couleurs spécifiques au survol pour chaque réseau social */
+.social-bar a.facebook:hover {
+    background-color: #2d4373;
+}
+
+.social-bar a.twitter:hover {
+    background-color: #0084b4;
+}
+
+.social-bar a.instagram:hover {
+    background-color: #9b2f6a;
+}
+
+.social-bar a.linkedin:hover {
+    background-color: #005582;
+}
+
+/* Conteneur pour l'icône agrandie */
+#big-icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Masqué par défaut */
+}
+
+#big-icon {
+    width: 200px; /* Taille de l'icône agrandie */
+    height: auto;
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+

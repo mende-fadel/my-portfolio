@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers fichier CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Section Header -->
+    <header>
+         <!-- Menu de navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">FADEL</a> <!-- ou ton propre nom/logo -->
+            <button id="theme-toggle" class="theme-toggle">
+                <span id="theme-icon" class="icon">🌙</span>
+            </button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#competences">Skills</a></li>
+            <li><a href="#projects">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+    </nav>
+        <!-- Section "Home" -->
+
+    <section id="home" class="home-section" >
+        <div class="center-content">
+        <p data-text="FADEL ">
+            Hi, I'm Fadel, Web Designer.
+            
+            Welcome To My Portfolio
+
+        </p>
+        <a href="#contact" class="contact-btn"> >>>HIRE ME<<< </a>
+        </div>
+    </section>
+    </header>
+
+     <!-- Section "À propos" -->
+     <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h1>Hi, <br> I'm <span class="highlighted">Fadel</span></h1>
+                <h2>Web Developer</h2>
+                <p>
+                    Je suis un développeur web et designer web passionné, avec une solide expérience dans la création de sites web innovants et esthétiquement plaisants.
+                     Mon portfolio reflète une variété de projets, allant de sites vitrines élégants à des plateformes e-commerce complexes.
+
+En tant que développeur, je maîtrise plusieurs langages de programmation tels que HTML, CSS, JavaScript, et PHP, ce qui me permet de créer des sites web performants et réactifs. Mon expertise en design me permet de concevoir des interfaces utilisateur intuitives et attrayantes, 
+en utilisant des outils comme Adobe XD, Figma, et Photoshop.
+                </p>
+                <a href="#contact" class="btn-contact">Contact Me</a>
+            </div>
+        
+            <div class="about-image">
+                <img src="img/logo.png" alt="Fadel">
+            </div>
+    </section>
+    <!-- Section Compétences avec barres de progression -->
+<section id="competences">
+    <h2>Compétences</h2>
+    <div class="competence">
+        <label>HTML</label>
+        <div class="progress-bar">
+            <div class="progress" data-skill="100"></div>
+        </div>
+    </div>
+    <div class="competence">
+        <label>CSS</label>
+        <div class="progress-bar">
+            <div class="progress" data-skill="80"></div>
+        </div>
+    </div>
+    <div class="competence">
+        <label>JavaScript</label>
+        <div class="progress-bar">
+            <div class="progress" data-skill="75"></div>
+        </div>
+    </div>
+    <div class="competence">
+        <label>React</label>
+        <div class="progress-bar">
+            <div class="progress" data-skill="50"></div>
+        </div>
+    </div>
+    <div class="competence">
+        <label>Node.js</label>
+        <div class="progress-bar">
+            <div class="progress" data-skill="30"></div>
+        </div>
+    </div>
+</section>
+<!-- Bouton de Téléchargement du CV -->
+<section id="cv">
+    <h2>Télécharger mon CV</h2>
+    <a href="mon cv.pdf" download class="download-btn">Télécharger mon CV</a>
+</section>
+
+    <!-- Section Projets -->
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>Projet sokoban-C</h3>
+                <a href="https://github.com/mende-fadel/sokoban-C" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8
+                         0-45.3s-32.8-12.5-45.3 0L288 274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7
+                         64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                </a>
+            </div>
+            <div class="project-item">
+                <h3>Projet CarsWebsite</h3>
+                <a href="https://mende-fadel.github.io/CarsWebsite/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3
+                         0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7
+                          64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/>
+                        </svg>
+                </a>
+            </div>
+            <div class="project-item">
+                <h3>Projet Mastermind</h3>
+                <a href="https://github.com/mende-fadel/Mastermind" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 
+                        274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="project-item">
+                <h3>Projet Experience-Conduite</h3>
+                <a href="https://mende-fadel.github.io/Experience-Conduite/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 
+                        274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/>
+                    </svg>
+                </a>
+            </div>
+            <!-- Ajoute plus de projets ici -->  
+        </div>
+        <button id="add-project-btn">Ajouter un projet</button>
+        
+        
+
+<!-- Conteneur pour l'icône agrandie -->
+<div id="big-icon-container">
+    <img id="big-icon" src="" alt=" ">
+</div>
+
+<!-- Barre latérale des réseaux sociaux -->
+<div class="social-bar">
+    <a href="https://facebook.com/toncompte" target="_blank" class="facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.787 4.656-4.787 1.324 0 2.462.099 2.793.143v3.24h-1.916c-1.5 0-1.79.712-1.79 1.76v2.307h3.58l-.467 3.622h-3.113V24h6.103c.732 0 1.325-.593 1.325-1.324V1.325C24 .593 23.407 0 22.675 0z"/>
+        </svg>
+    </a>
+    <a href="https://twitter.com/toncompte" target="_blank" class="twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+    </a>
+    <a href="https://instagram.com/toncompte" target="_blank" class="instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 
+            2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/toncompte" target="_blank" class="linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3
+             0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+    
+</div>
+
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="contact-form.php" method="POST">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mon Portfolio</p>
+    </footer>
+    <script src="app.js"></script> <!-- Lien vers le fichier JavaScript -->
+</body>
+</html>
