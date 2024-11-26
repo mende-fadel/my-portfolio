@@ -7,55 +7,89 @@ body {
     color: #000000;
     
 }
-/*Style pour le mode sombre*/
-body.dark-theme {
-    background-color: #121212; /* Fond général sombre */
-    color: #ffffff; /* Texte par défaut en blanc */
-}
-body.dark-theme header {
-    background-color: #000000; /* Fond du header noir */
-    color: #ffffff; /* Texte du header blanc */
+/* Mode sombre */
+body.dark-theme nav {
+    background-color: #000000; /* Fond du nav en noir */
+    color: #ffffff; /* Texte du nav en blanc */
 }
 
-body.dark-theme a {
+body.dark-theme nav a {
     color: #ffffff; /* Liens en blanc */
 }
-body.dark-theme .social-bar a svg {
-    fill: #ffffff; /* Icônes SVG blanches */
-}
 
-body.dark-theme .form-group input,
-body.dark-theme .form-group textarea {
-    background-color: #1e1e1e; /* Champs formulaire sombre */
-    color: #ffffff; /* Texte formulaire blanc */
-    border: 1px solid #ffffff; /* Bordures blanches */
+body.dark-theme nav a:hover {
+    color: #cccccc; /* Liens en gris clair au survol */
 }
-
 body.dark-theme .project-item {
     background-color: #1e1e1e; /* Arrière-plan des projets */
     color: #ffffff; /* Texte des projets */
 }
 
-/* Bouton de bascule du thème */
-.theme-toggle {
-    background-color: #f0f0f0;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-}
-
-body.dark-theme .theme-toggle {
-    background-color: #1e1e1e; /* Arrière-plan des projets */
-    color: #ffffff; /* Texte des projets */
-   
-}
-
+body.dark-theme .project-item:hover {
+    background-color: #2f2f2f; /* Arrière-plan des projets au
+    survol */
+    }
+    body.dark-theme .project-item img {
+        filter: invert(1); /* Inversion des couleurs des images */
+        }
+        body.dark-theme .project-item img:hover {
+            filter: invert(0); /* Retour à l'image normale au survol */
+            }
+            body.dark-theme .project-item h2 {
+                color: #ffffff; /* Titre des projets en blanc */
+                }
+                body.dark-theme .project-item p {
+                    color: #ffffff; /* Texte des projets en blanc */
+                    }
+                    body.dark-theme .project-item a {
+                        color: #ffffff; /* Liens des projets en blanc */
+                        }
+                        body.dark-theme .project-item a:hover {
+                            color: #cccccc; /* Liens des projets en gris clair au survol
+                            */
+                            }
+                            body.dark-theme .project-item .btn {
+                                background-color: #2f2f2f; /* Arrière-plan des boutons */
+                                color: #ffffff; /* Texte des boutons */
+                                }
+                                body.dark-theme .project-item .btn:hover {
+                                    background-color: #333333; /* Arrière-plan des boutons au survol */
+                                    color: #ffffff; /* Texte des boutons au survol */
+                                    }
+                                    body.dark-theme .project-item .btn:active {
+                                        background-color: #444444; /* Arrière-plan des boutons enfoncés */
+                                        color: #ffffff; /* Texte des boutons enfoncés */
+                                        }
+                                        body.dark-theme .project-item .btn:focus {
+                                            background-color: #555555; /* Arrière-plan des boutons en focus */
+                                            color: #ffffff; /* Texte des boutons en focus */
+                                            }
+                                            body.dark-theme .project-item .btn:disabled {
+                                                background-color: #666666; /* Arrière-plan des boutons désactivés */
+                                                color: #ffffff; /* Texte des boutons désactivés */
+                                                }
+                                                body.dark-theme .project-item .btn:disabled:hover {
+                                                    background-color: #666666; /* Arrière-plan des boutons désactivés au surv
+                                                    ol */
+                                                    color: #ffffff; /* Texte des boutons désactivés au survol */
+                                                    }
+                                                    body.dark-theme .project-item .btn:disabled:active {
+                                                        background-color: #666666; /* Arrière-plan des boutons désactivés enfon
+                                                        cés */
+                                                        color: #ffffff; /* Texte des boutons désactivés enfoncés */
+                                                        }
+                                                        body.dark-theme .project-item .btn:disabled:focus {
+                                                            background-color: #666666; /* Arrière-plan des boutons désactivés en
+                                                            focus */
+                                                            color: #ffffff; /* Texte des boutons désactivés en focus */
+                                                            }
+                                                            body.dark-theme .project-item .btn:disabled:active:focus {
+                                                                background-color: #666666; /* Arrière-plan des boutons désactivés enfon
+                                                                cés en focus */
+                                                                color: #ffffff; /* Texte des boutons désactivés enfoncés en
+                                                                focus */
+                                                                }
+                                                                
 /* Icône du thème avec animation */
 .icon {
     font-size: 24px;
@@ -65,6 +99,7 @@ body.dark-theme .theme-toggle {
 body.dark-theme .icon {
     transform: rotate(180deg);  /* Rotation lors du changement de thème */
 }
+
 header {
     color: white;
     padding: 20px;
@@ -78,6 +113,7 @@ header {
     top: 0;
     width: 98%;
     background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
     display: flex;
     justify-content:space-between;
     align-items: center;
