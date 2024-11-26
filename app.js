@@ -38,14 +38,17 @@ const body = document.body;
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {
     body.classList.add("dark-theme");
-    themeIcon.textContent = "☀️"; // Change l'icône au soleil pour le mode clair
+    themeIcon.textContent = "☀️"; // Icône pour basculer en mode clair
+} else {
+    body.classList.remove("dark-theme");
+    themeIcon.textContent = "🌙"; // Icône pour basculer en mode sombre
 }
 
 // Écouteur pour basculer entre le mode clair et sombre
 themeToggle.addEventListener("click", () => {
     body.classList.toggle("dark-theme");
 
-    // Change l'icône et le texte en fonction du thème actuel
+    // Change l'icône en fonction du thème
     if (body.classList.contains("dark-theme")) {
         themeIcon.textContent = "☀️";
         localStorage.setItem("theme", "dark");
@@ -54,6 +57,7 @@ themeToggle.addEventListener("click", () => {
         localStorage.setItem("theme", "light");
     }
 });
+
 
 //pour les compétences 
 
