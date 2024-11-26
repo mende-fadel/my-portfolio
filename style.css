@@ -9,8 +9,31 @@ body {
 }
 /*Style pour le mode sombre*/
 body.dark-theme {
-    background-color: #0f0f0f;
-    color: #fff;
+    background-color: #121212; /* Fond général sombre */
+    color: #ffffff; /* Texte par défaut en blanc */
+}
+body.dark-theme header {
+    background-color: #000000; /* Fond du header noir */
+    color: #ffffff; /* Texte du header blanc */
+}
+
+body.dark-theme a {
+    color: #ffffff; /* Liens en blanc */
+}
+body.dark-theme .social-bar a svg {
+    fill: #ffffff; /* Icônes SVG blanches */
+}
+
+body.dark-theme .form-group input,
+body.dark-theme .form-group textarea {
+    background-color: #1e1e1e; /* Champs formulaire sombre */
+    color: #ffffff; /* Texte formulaire blanc */
+    border: 1px solid #ffffff; /* Bordures blanches */
+}
+
+body.dark-theme .project-item {
+    background-color: #1e1e1e; /* Arrière-plan des projets */
+    color: #ffffff; /* Texte des projets */
 }
 
 /* Bouton de bascule du thème */
@@ -28,7 +51,9 @@ body.dark-theme {
 }
 
 body.dark-theme .theme-toggle {
-    background-color: #333;
+    background-color: #1e1e1e; /* Arrière-plan des projets */
+    color: #ffffff; /* Texte des projets */
+   
 }
 
 /* Icône du thème avec animation */
