@@ -89,10 +89,10 @@ body.dark-theme .project-item:hover {
                                                                 color: #ffffff; /* Texte des boutons désactivés enfoncés en
                                                                 focus */
                                                                 }
-                                                                
+
 /* Icône du thème avec animation */
 .icon {
-    font-size: 24px;
+    font-size: 20px;
     transition: transform 0.5s ease;
 }
 
